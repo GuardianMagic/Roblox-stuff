@@ -308,7 +308,7 @@ local script = G2L["4"];
 			local script = Instance.new('LocalScript', banButton)
 	
 			script.Parent.MouseButton1Click:Connect(function()
-				if table.find(banned, script.Parent.Parent.Parent.Username.Name) == nil then
+				if table.find(_G.banned, script.Parent.Parent.Parent.Username.Name) == nil then
 					chat(_G.prefix.."ban "..script.Parent.Parent.Parent.Username.Name)
 					script.Parent.Text = "Unban"
 				else
@@ -322,7 +322,7 @@ local script = G2L["4"];
 			local script = Instance.new('LocalScript', whitelistButton)
 	
 			script.Parent.MouseButton1Click:Connect(function()
-				if table.find(whitelist, script.Parent.Parent.Parent.Username.Name) == nil then
+				if table.find(_G.whitelist, script.Parent.Parent.Parent.Username.Name) == nil then
 					chat(_G.prefix.."wl "..script.Parent.Parent.Parent.Username.Name)
 					script.Parent.Text = "Unwhitelist"
 				else
