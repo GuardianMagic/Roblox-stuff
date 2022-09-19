@@ -6,7 +6,7 @@ coroutine.wrap(
         -- StarterGui.Bara Player List
         G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
         G2L["1"]["Name"] = [[Bara Player List]];
-        G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+        G2L["1"]["ResetOnSpawn"] = false;
         
         -- StarterGui.Bara Player List.Body
         G2L["2"] = Instance.new("Frame", G2L["1"]);
